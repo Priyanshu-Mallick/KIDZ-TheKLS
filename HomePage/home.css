@@ -1,0 +1,65 @@
+/* home.css */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #00001c;
+    /* Deep blue background color */
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    text-align: center;
+    background-color: #00001c;
+    /* Deep blue background color for the navbar */
+    padding: 20px 0;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #00FFFF;
+    /* Cyan color for clickable texts */
+    font-size: 18px;
+    position: relative;
+    /* Create a positioning context for the pseudo-element */
+    transition: text-shadow 0.3s ease-in-out;
+    /* Add a transition for the shadow */
+}
+
+.navbar ul li a.active {
+    font-weight: bold;
+    /* Style for the active link */
+}
+
+.navbar ul li a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #00FFFF;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+    /* Add a transition for the underline */
+}
+
+.navbar ul li a:hover {
+    text-shadow: 0 0 8px #00FFFF;
+    /* Increase spreading radius of text shadow on hover */
+}
+
+.navbar ul li a:hover::before {
+    transform: scaleX(1);
+    /* Expand the underline on hover */
+}
