@@ -63,3 +63,66 @@ body {
     transform: scaleX(1);
     /* Expand the underline on hover */
 }
+
+.header {
+    display: flex;
+    justify-content: space-between; /* Distribute space between logo/paragraph and image */
+    align-items: center;
+    background-color: #00001c;
+    /* Deep blue background color for the header */
+    padding: 20px;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column; /* Stack logo and paragraph vertically */
+    justify-content: center;
+    align-items: flex-start; /* Align items to the start (left) of the container */
+}
+
+.logo {
+    color: #fafdfd;
+    /* Cyan color for the logo text */
+    font-size: 60px;
+    /* Adjusted font size to make it bigger */
+    font-weight: bold;
+    margin-bottom: 10px; /* Added some margin between logo and paragraph */
+}
+
+
+.image-container {
+    max-width: 50%; /* Adjusted max-width to make the image take up the full width of its container */
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+
+.buttons {
+    text-align: center;
+    margin-top: auto; /* Adjusted margin-top to 'auto' to push buttons to the bottom */
+    position: absolute;
+    bottom: 20px; /* Added a fixed distance from the bottom */
+    left: 50%; /* Centering the buttons horizontally */
+    transform: translateX(-50%); /* Adjusted centering for responsiveness */
+}
+
+.buttons button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #00FFFF;
+    /* Cyan color for button background */
+    color: #000;
+    /* Black color for button text */
+    border: none;
+    border-radius: 5px;
+}
+.description {
+    color: #fafdfd;
+    /* Adjusted text color for better visibility */
+    font-size: 18px;
+    max-width: 80%;
+}
