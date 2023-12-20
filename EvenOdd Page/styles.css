@@ -1,0 +1,37 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: aqua;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: wheat;
+    background-image: url('./05a168c4a0fc699de7edbf94cde8de96.gif');
+    background-size: cover;
+  }
+
+  #randomNumber{
+    color: wheat;
+  }
+  
+  .content {
+    text-align: center;
+    color: white;
+  }
+  
+  .buttons {
+    margin-top: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  

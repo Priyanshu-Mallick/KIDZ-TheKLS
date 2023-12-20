@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Odd/Even Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="lifeline">
+        <h2>Life</h2>
+        <p id="life">3</p>
+    </div>
+    <div class="content">
+      <h1 id="randomNumber"></h1>
+      <div class="buttons">
+        <button onclick="checkNumber('odd')">Odd</button>
+        <button onclick="checkNumber('even')">Even</button>
+      </div>
+    </div>
+    <div class="scoreboard">
+        <h2>Score</h2>
+        <p id="score">0</p>
+      </div>
+  </div>
+  <script src="script.js"></script>
+</body>
