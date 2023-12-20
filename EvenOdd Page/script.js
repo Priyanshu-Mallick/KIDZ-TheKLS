@@ -4,10 +4,10 @@ let life = 3;
 function resetAll(){
   score = 0;
   life = 3;
-  // const sc = document.getElementById('score');
-  // const lf = document.getElementById('life');
-  // sc.textContent = score;
-  // lf.textContent = life;
+  const sc = document.getElementById('score');
+
+  sc.textContent = score;
+
   const images = document.querySelectorAll('.heartcontainer img');
   images[0].style.display = 'block';
   images[1].style.display = 'block';
