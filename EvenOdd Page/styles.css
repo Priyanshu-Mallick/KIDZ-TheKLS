@@ -2,7 +2,7 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
-    background-color: aqua;
+    background-color: wheat;
   }
   
   .container {
@@ -10,14 +10,15 @@ body, html {
     justify-content: center;
     align-items: center;
     height: 100%;
-    color: wheat;
-    background-image: url('./05a168c4a0fc699de7edbf94cde8de96.gif');
+    /* background-image: url('./05a168c4a0fc699de7edbf94cde8de96.gif'); */
     background-size: cover;
   }
 
-  #randomNumber{
-    color: wheat;
+  #randomNumber {
+    font-size: 200px; /* Increased font size */
+    color: black;
   }
+  
   
   .content {
     text-align: center;
@@ -27,6 +28,13 @@ body, html {
   .buttons {
     margin-top: 20px;
   }
+
+  #score{
+    margin-top: 0px;
+    padding-top: 0px;
+    font-size: 200px;
+    padding-left: 50px;
+  }
   
   button {
     padding: 10px 20px;
@@ -34,4 +42,43 @@ body, html {
     font-size: 16px;
     cursor: pointer;
   }
+  .heart {
+    height: 80px;
+    width: 80px;
+  }
+
+  .heartcontainer {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    left: 200px; /* Padding added */
+    top: 50%; /* Adjust this value as needed */
+    transform: translateY(-50%);
+  }
   
+  .heartcontainer h3 {
+    margin-top: 10px; /* Adjust this value as needed */
+    font-size: 18px; /* Adjust this value as needed */
+  }
+  
+  .scoreboard {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    right: 200px; /* Padding added */
+    top: 50%; /* Adjust this value as needed */
+    transform: translateY(-50%);
+  }
+  
+  .scoreboard p:nth-child(1) {
+    margin-bottom: 10px; /* Adjust this value as needed */
+    font-size: 18px; /* Adjust this value as needed */
+  }
+  
+  #scoreTitle{
+    font-size: 15px;
+    margin-bottom: 15px;
+  }

@@ -1,5 +1,18 @@
 let score = 0;
 let life = 3;
+
+function resetAll(){
+  score = 0;
+  life = 3;
+  // const sc = document.getElementById('score');
+  // const lf = document.getElementById('life');
+  // sc.textContent = score;
+  // lf.textContent = life;
+  const images = document.querySelectorAll('.heartcontainer img');
+  images[0].style.display = 'block';
+  images[1].style.display = 'block';
+  images[2].style.display = 'block';
+}
 function updateScore() {
   const scoreElement = document.getElementById('score');
   scoreElement.textContent = score;
@@ -10,8 +23,8 @@ function increaseScore() {
   updateScore();
 }
 function updateLife() {
-    const lifeElement = document.getElementById('life');
-    lifeElement.textContent = life;
+    const images = document.querySelectorAll('.heartcontainer img');
+    images[life].style.display = 'none';
   }
 function decreaseLife(){
     life--;
@@ -33,18 +46,12 @@ function checkNumber(choice) {
   const isEven = randomNumber % 2 === 0;
 
   if ((choice === 'even' && isEven) || (choice === 'odd' && !isEven)) {
-    // alert('Correct!');
     increaseScore();
   } else {
-    // alert('Incorrect!');
-    if(life == 0){
-        alert("Game Over!");
-        score = 0;
-        life = 3;
-        const sc = document.getElementById('score');
-        const lf = document.getElementById('life');
-        sc.textContent = score;
-        lf.textContent = life
+    if(life == 1){
+      decreaseLife();
+      alert("Game Over!");
+      resetAll();
     }
     else{
         decreaseLife();

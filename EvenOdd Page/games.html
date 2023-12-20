@@ -7,10 +7,13 @@
 </head>
 <body>
   <div class="container">
-    <div class="lifeline">
-        <h2>Life</h2>
-        <p id="life">3</p>
+    <div class="heartcontainer">
+      <h3>Lifeline</h3>
+      <img class="heart" id="heart1" src="./heart-svgrepo-com.svg" alt="">
+      <img class="heart" id="heart2" src="./heart-svgrepo-com.svg" alt="">
+      <img class="heart" id="heart3" src="./heart-svgrepo-com.svg" alt="">
     </div>
+
     <div class="content">
       <h1 id="randomNumber"></h1>
       <div class="buttons">
@@ -18,10 +21,10 @@
         <button onclick="checkNumber('even')">Even</button>
       </div>
     </div>
-    <div class="scoreboard">
-        <h2>Score</h2>
-        <p id="score">0</p>
-      </div>
+   <div class="scoreboard">
+      <p id="scoreTitle">Score</p>
+      <p id="score">0</p>
+    </div>
   </div>
   <script src="script.js"></script>
 </body>
