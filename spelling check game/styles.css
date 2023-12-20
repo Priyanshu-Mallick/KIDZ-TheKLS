@@ -1,0 +1,110 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background: #6563ff;
+
+  }
+  
+  #game-container {
+    text-align: center;
+    border: 6px solid #0f01016d;
+    padding: 20px;
+    border-radius: 10px;
+    border-width: 5px;
+    background: #fff;
+  }
+  #game-container input{
+    width: 80%;
+    height: 60px;
+    outline: none;
+    padding: 0 16px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid #bfbfbf;
+  }
+  
+  #image {
+    max-width: 300px;
+    margin: 20px auto; /* Center the image horizontally within the box */
+    display: block; /* Ensure the image is treated as a block element */
+  }
+  
+  #guess {
+    margin: 30px 0;
+    padding: 0 16px;
+    width: 80%;
+    height: 60px;
+    outline:none ;
+  }
+  
+  #score, #round, #message {
+    margin: 10px 0;
+    font-size: 33px;
+    font-weight: 500;
+  }
+  
+  #start-again {
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 15px 0;
+    font-size: 17px;
+    border-radius: 5px;
+    width: calc(100% / 2 - 8px);
+    transition: all 0.3s ease;
+    background: #6C757D;
+
+  }
+  #start-again:hover{
+    background: #5f666d;
+
+  }
+
+  #start-again:active{
+    transform: scale(0.97);
+  }
+  
+  #game-container input:focus{
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.08);
+  }
+  #game-container input::placeholder{
+    color: #aaa;
+  }
+  #game-container input:focus::placeholder{
+    color: #bfbfbf;
+  }
+  
+  #submit {
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 15px 0;
+    font-size: 17px;
+    border-radius: 5px;
+    width: calc(100% / 2 - 8px);
+    transition: all 0.3s ease;
+    background: #6C757D;
+
+  }
+  #submit:hover{
+    background: #5f666d;
+
+  }
+
+  #submit:active{
+    transform: scale(0.97);
+  }
+  
+   
